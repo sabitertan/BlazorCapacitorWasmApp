@@ -9,5 +9,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.2" PrivateAssets="all" />
     <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
   </ItemGroup>
-
+    <ItemGroup>
+      <Compile Remove="platforms\**" />
+      <Content Remove="platforms\**" />
+      <EmbeddedResource Remove="platforms\**" />
+      <None Remove="platforms\**" />
+      <Watch Remove="platforms\**" />
+    </ItemGroup>
 </Project>
