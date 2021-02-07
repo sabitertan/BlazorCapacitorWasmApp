@@ -6,12 +6,14 @@ Exploring Blazor Web Assembly on capacitor
 2. create "platforms\capacitor" folder
 3. cd "platforms\capacitor"
 4. copy wwwroot files to "platforms\capacitor\www"
-5. npx cap init
-6. npx cap add android
-7. copy "bin\Debug\5.0\_framework" to "platforms\capacitor\www\framework"
-8. replace "_framework" with "framework" in platforms\capacitor\www\framework\blazor.webassembly.js
-9. delete "*.gz" files under "platforms\capacitor\www\framework"
-10. npx cap open android
-11. Build with Android Studio
-12. Run in Android Emulator (Pixel C API 30 )
+5. copy "obj\Debug\net5.0\scopedcss\bundle\BlazorCapacitorWasmApp.styles.css" to "platforms\capacitor\www"
+6. npx cap init
+7. npx cap add android
+8. copy "bin\Debug\net5.0\\_framework" to "platforms\capacitor\www\framework"
+9. replace "_framework" with "framework" in platforms\capacitor\www\framework\blazor.webassembly.js
+10. delete "*.gz" files under "platforms\capacitor\www\framework"
+11. npx cap open android
+12. Build with Android Studio
+13. Run in Android Emulator (Pixel C API 30 , Pixel XL API 29)
+14. API 28 emulators did not work
 
